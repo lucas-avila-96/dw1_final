@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Don Pepe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header sticky-top">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <div class="me-auto">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="imagenes\iconos\Don Pepe-logos_white.png" alt="" width="72" height="72">
+                    </a>
+                </div>
+                <div class="input-group px-3">
+                    <input id="search-input" type="search" class="form-control bg-light" placeholder="Buscar producto">
+                    <button id="search-button" type="button" class="btn btn-light">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" type="button" class="text-decoration-none text-reset" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="outside">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#ffff"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                    </a>
+                    <form class="dropdown-menu p-3" style="width: 18rem;">
+                        <div class="mb-3">
+                            <label for="exampleDropdownFormEmail2" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail2"
+                                placeholder="correo@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownFormPassword2" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword2"
+                                placeholder="Contraseña">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                <label class="form-check-label" for="dropdownCheck2">
+                                    Recordar
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn  w-100">Iniciar sesión</button>
+                    </form>
+                </div>
+
+                <div class="dropdown">
+                    <a href="" class="d-block link-dark text-decoration-none ps-3 position-relative" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#ffff" class="bi bi-cart2"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end p-3 text-small" style="width: 18rem;">
+                        <li class="list-group-item d-flex justify-content-between lh-sm m-2">
+                            <div>
+                                <h6 class="my-0">Vino tinto</h6>
+                                <small class="text-muted">750ml</small>
+                            </div>
+                            <span class="text-muted">$500</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm m-2">
+                            <div>
+                                <h6 class="my-0">Pan</h6>
+                                <small class="text-muted">1kg</small>
+                            </div>
+                            <span class="text-muted">$300</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm m-2">
+                            <div>
+                                <h6 class="my-0">Fideos</h6>
+                                <small class="text-muted">500gr</small>
+                            </div>
+                            <span class="text-muted">$200</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm m-2 bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Codigo promocional</h6>
+                                <small>10OFF</small>
+                            </div>
+                            <span class="text-success">−$100</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total</span>
+                            <strong>$900</strong>
+                        </li>
+                        <a href="pago.html" class="mt-2 w-100 btn">Finalizar compra</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--fin header-->
+    <!--nav-->
+    <nav class="nav-top navbar navbar-expand-lg text-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-between flex-grow-1">
+                        <li class="nav-item">
+                            <div class="dropdown py-2">
+                                <a class="text-decoration-none text-reset dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorías
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="productos.html" class="dropdown-item" type="button">Tecnologia</a></li>
+                                    <li><a href="productos.html" class="dropdown-item"
+                                            type="button">Electrodomesticos</a></li>
+                                    <li><a href="productos.html" class="dropdown-item" type="button">Muebles</a></li>
+                                    <li><a href="productos.html" class="dropdown-item" type="button">Herramientas</a>
+                                    </li>
+                                    <li><a href="productos.html" class="dropdown-item" type="button">Jueguetes</a></li>
+                                    <li><a href="productos.html" class="dropdown-item" type="button">Tiempo libre</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none text-reset" data-backdrop="static"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="me-2 bi bi-truck" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>Enviar a: 5411
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none text-reset" type="button"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="me-2 bi bi-credit-card" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+                                    <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+                                </svg>Medios de pago</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none text-reset" type="button"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="me-2 bi bi-question-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                                </svg>¿Como comprar?</a>
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link text-decoration-none text-reset" type="button"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="me-2 bi bi-shop" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
+                                </svg>Sucursales</a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link btn rounded-pill text-decoration-none text-light" type="button"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="me-2 bi bi-percent" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                                </svg>Promociones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Elegí dónde recibir tus
+                                compras</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="CP:" aria-label="Search">
+                                <button class="btn" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!--fin nav-->
+    <div class="container">
+        <div class="m-3">
+            <a class="text-decoration-none" href="productos.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>Volver</a>
+        </div>
+        <div class="row m-3">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="imagenes\Productos\552990-800-auto.webp" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <h3 class="card-title">Agua mineral - VEA</h3>
+                    <p class="card-text">2 Lts</p>
+                    <p class="card-text fs-5 fw-semibold">$500</p>
+                </div>
+                <div class="mb-3">
+                    <h5>Descripcion</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque asperiores sequi tenetur quos
+                        blanditiis vel et dolorem in sit impedit dolore sapiente cupiditate fuga ipsum velit, voluptates
+                        quis quo beatae?</p>
+                </div>
+                <div class="align-items-center">
+                    <div class="input-group w-75">
+                        <button class="btn btn-outline-secondary" type="button">-</button>
+                        <input type="text" class="form-control text-center" placeholder="0">
+                        <button class="btn btn-outline-secondary" type="button">+</button>
+                    </div>
+                    <a class="my-2 btn w-75">Agregar<i class="ps-2 bi bi-bag"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer container-fluid text-dark">
+        <footer class="container py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Nosotros</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-reset">Codigo de
+                                etica</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-reset">Historia</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-reset">Responsabilidad
+                                social</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-reset">Terminos &
+                                condiciones</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-reset">Politica de
+                                privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Sobre nuestros servicios</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-reset">Cambios y
+                                devoluciones</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-reset">Medios de pago</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-reset">Legales</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>De interes</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-reset">Trabaja con
+                                nosotros</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-reset">Preguntas
+                                frecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Suscribite para recibir ofertas</h5>
+                        <p>Recibi las mejores ofertas semanales</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Correo electróncio</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Correo">
+                            <a class="btn" type="button">Suscribirme</a>
+                        </div>
+                    </form>
+                    <div class="my-3">
+                        <h5>Horario de atencion</h5>
+                        <p>Lunes a Viernes de 8h a 20h</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center pt-3">© 2022 Company, Inc. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!--Fin footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
